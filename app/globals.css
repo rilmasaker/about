@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+/* Light theme (default) */
+html.light {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Dark theme */
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+html.dark .dark\:bg-gray-950 {
+  background-color: rgb(3 7 18) !important;
+}
+
+html.dark .dark\:bg-gray-900 {
+  background-color: rgb(17 24 39) !important;
+}
+
+html.dark .dark\:bg-gray-800 {
+  background-color: rgb(31 41 55) !important;
+}
+
+html.dark .dark\:bg-gray-700 {
+  background-color: rgb(55 65 81) !important;
+}
+
+html.dark .dark\:text-white {
+  color: rgb(255 255 255) !important;
+}
+
+html.dark .dark\:text-gray-300 {
+  color: rgb(209 213 219) !important;
+}
+
+html.dark .dark\:text-gray-400 {
+  color: rgb(156 163 175) !important;
+}
+
+html.dark .dark\:text-gray-200 {
+  color: rgb(229 231 235) !important;
+}
+
+html.dark .dark\:border-gray-800 {
+  border-color: rgb(31 41 55) !important;
+}
+
+html.dark .dark\:border-gray-700 {
+  border-color: rgb(55 65 81) !important;
+}
+
+html.dark .dark\:hover\:bg-gray-600:hover {
+  background-color: rgb(75 85 99) !important;
+}
+
+html.dark .dark\:hover\:text-blue-400:hover {
+  color: rgb(96 165 250) !important;
+}
+
+/* High contrast theme for accessibility */
+html.high-contrast {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+html.high-contrast * {
+  border-color: #ffff00 !important;
+}
+
+html.high-contrast .high-contrast\:bg-black {
+  background-color: rgb(0 0 0) !important;
+}
+
+html.high-contrast .high-contrast\:bg-white {
+  background-color: rgb(255 255 255) !important;
+}
+
+html.high-contrast .high-contrast\:text-white {
+  color: rgb(255 255 255) !important;
+}
+
+html.high-contrast .high-contrast\:text-black {
+  color: rgb(0 0 0) !important;
+}
+
+html.high-contrast .high-contrast\:border-yellow-400 {
+  border-color: rgb(250 204 21) !important;
+}
+
+html.high-contrast .high-contrast\:border-4 {
+  border-width: 4px !important;
+}
+
+html.high-contrast .high-contrast\:hover\:text-yellow-400:hover {
+  color: rgb(250 204 21) !important;
+}
+
+html.high-contrast .high-contrast\:focus\:ring-yellow-400:focus {
+  --tw-ring-color: rgb(250 204 21) !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Ensure focus indicators are visible */
+*:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+html.high-contrast *:focus-visible {
+  outline: 3px solid #ffff00;
+  outline-offset: 3px;
+}
+
+/* Skip to main content link for accessibility */
+.skip-to-main {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1rem;
+  background: #3b82f6;
+  color: white;
+  text-decoration: none;
+}
+
+.skip-to-main:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
