@@ -573,7 +573,7 @@ export const workExperience: WorkExperience[] = [
   },
 
   {
-    company: "Volunteer (Haiti–Nepal / NGO)",
+    company: "Volunteer Nepal / NGO",
     position: {
       en: "Programming Instructor (Mentor)",
       pl: "Instruktor programowania (Mentor)",
