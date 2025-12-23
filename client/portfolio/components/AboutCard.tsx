@@ -1,3 +1,6 @@
+"use client";
+
+import { useRef } from "react";
 import Image from "next/image";
 
 import { SocialLinks } from "@/client/portfolio/components/SocialLinks";
@@ -8,6 +11,7 @@ import {
   t,
   usePortfolioTexts,
 } from "@/client/portfolio/hooks/usePortfolioTexts";
+import { OrbitGlowCursorEffect } from "@/client/ui/components/OrbitGlowCursorEffect";
 
 type Props = {
   about: AboutData;
@@ -21,6 +25,8 @@ const PROFILE_IMAGE_SIZES = "176px";
 export function AboutCard(props: Props) {
   const { about, locale, theme } = props;
 
+  const cardRef = useRef<HTMLElement | null>(null);
+
   const texts = usePortfolioTexts({ locale, key: "aboutCard" });
 
   const title = t(locale, about.title);
@@ -29,13 +35,31 @@ export function AboutCard(props: Props) {
   const sectionAriaLabel = texts.aria.sectionLabel;
   // @ts-expect-error - intentional text factory localization
   const profileImageAlt = t(locale, texts.image.profileAlt(about.name));
+
+  const glowColor =
+    theme === "contrast"
+      ? "rgba(250, 204, 21, 0.95)"
+      : "rgba(34, 197, 94, 0.92)";
+
   return (
     <section
+      ref={cardRef}
       aria-label={sectionAriaLabel}
       aria-labelledby={ABOUT_CARD_HEADING_ID}
-      className={`${cardClasses[theme]} border rounded-2xl p-8 lg:h-140`}
+      className={`${cardClasses[theme]} relative overflow-hidden border rounded-2xl p-8 lg:h-140`}
     >
-      <div className="flex flex-col gap-6 sm:flex-row sm:justify-between">
+      <OrbitGlowCursorEffect
+        boundsRef={cardRef}
+        color={glowColor}
+        particleCount={3}
+        radius={30}
+        trailLength={23}
+        glowBlur={9}
+        strokeWidth={4}
+        intensity={2}
+      />
+
+      <div className="relative z-10 flex flex-col gap-6 sm:flex-row sm:justify-between">
         <div className="min-w-0 flex-1">
           <Text
             className={accentClasses[theme]}
