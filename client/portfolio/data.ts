@@ -279,6 +279,8 @@ export const workExperience: WorkExperience[] = [
     period: "2018 - 2019",
     projects: [
       {
+        image: "/consultant.jpg",
+        link: "https://astek.pl/",
         title: {
           en: "Consultant Management System",
           pl: "System zarządzania konsultantami",
@@ -308,6 +310,8 @@ export const workExperience: WorkExperience[] = [
           en: "Confidential Medical Application (Frontend)",
           pl: "Poufna aplikacja medyczna (Frontend)",
         },
+        link: "https://astek.pl/",
+        image: "/astek.jpg",
         period: "12 months",
         description: {
           en: "Contributed to a medical-industry platform. Due to NDA, I can describe only the engineering scope: building UI features, ensuring high quality, and meeting strict reliability and security requirements for healthcare software used at global scale.",
@@ -338,6 +342,7 @@ export const workExperience: WorkExperience[] = [
     period: "2019 - 2021",
     projects: [
       {
+        image: "/clozer.jpg",
         title: { en: "Clozer", pl: "Clozer" },
         period: "2019-07 – 2020-02",
         description: {
@@ -354,7 +359,6 @@ export const workExperience: WorkExperience[] = [
           { name: "Git", iconKey: "git" },
           { name: "Jira", iconKey: "jira" },
         ],
-        link: "https://www.vazco.eu/case-studies/clozer",
         location: {
           city: "San Francisco",
           country: "USA",
@@ -363,6 +367,7 @@ export const workExperience: WorkExperience[] = [
         },
       },
       {
+        image: "/itt.jpg",
         title: { en: "Internal Traits Tracker", pl: "Internal Traits Tracker" },
         period: "2019-03 – 2019-05",
         description: {
@@ -386,6 +391,7 @@ export const workExperience: WorkExperience[] = [
         },
       },
       {
+        image: "/form-builder.jpg",
         title: { en: "Form Builder", pl: "Form Builder" },
         period: "2020-01 – 2020-03",
         description: {
@@ -410,6 +416,7 @@ export const workExperience: WorkExperience[] = [
         },
       },
       {
+        image: "/chess.jpg",
         title: { en: "Velocity Chess", pl: "Velocity Chess" },
         period: "2020-03 – 2020-05",
         description: {
@@ -430,6 +437,7 @@ export const workExperience: WorkExperience[] = [
         },
       },
       {
+        image: "/grid.jpg",
         title: { en: "Grid", pl: "Grid" },
         period: "2020-07 – 2020-10",
         description: {
@@ -446,7 +454,6 @@ export const workExperience: WorkExperience[] = [
           { name: "Firebase", iconKey: "firebase" },
           { name: "Git", iconKey: "git" },
         ],
-        link: "https://www.vazco.eu/case-studies/grid",
         location: {
           city: "Germany",
           country: "Germany",
@@ -455,8 +462,11 @@ export const workExperience: WorkExperience[] = [
         },
       },
       {
+        image: "/epotek.jpg",
+        link: "https://resolve.ch/en/",
         title: { en: "e-Potek", pl: "e-Potek" },
         period: "2020-10 – 2021-05",
+
         description: {
           en: "Mortgage/borrowing capacity app: delivered live credit form flows and improved UI reliability for a fully-online financing journey.",
           pl: "Aplikacja hipoteczna: dostarczyłem działające „live” formularze kredytowe i podniosłem niezawodność UI w pełni online’owego procesu.",
@@ -478,6 +488,8 @@ export const workExperience: WorkExperience[] = [
         },
       },
       {
+        image: "/dino.jpg",
+        link: "https://marketdino.pl/",
         title: {
           en: "Dino Market Front Page",
           pl: "Dino – strona główna marketu",
@@ -502,6 +514,7 @@ export const workExperience: WorkExperience[] = [
         },
       },
       {
+        image: "/maestro.jpg",
         title: {
           en: "MaestroQA (optimization sprint)",
           pl: "MaestroQA (optymalizacja)",
@@ -527,6 +540,7 @@ export const workExperience: WorkExperience[] = [
         },
       },
       {
+        image: "/teebly.jpg",
         title: {
           en: "Teebly (internal corporate chat)",
           pl: "Teebly (czat korporacyjny)",
@@ -552,6 +566,7 @@ export const workExperience: WorkExperience[] = [
       },
       {
         title: { en: "uniforms (open-source)", pl: "uniforms (open-source)" },
+        link: "https://uniforms.tools/",
         period: "1 month",
         description: {
           en: "Open-source contribution focused on TypeScript typings and developer experience for a forms toolkit.",
@@ -581,6 +596,7 @@ export const workExperience: WorkExperience[] = [
     period: "2021 - 2022 (9 months)",
     projects: [
       {
+        image: "/mentoring-nepal.jpeg",
         title: {
           en: "Programming School / Mentoring Program",
           pl: "Szkoła programowania / program mentoringowy",
@@ -615,6 +631,7 @@ export const workExperience: WorkExperience[] = [
     period: "2022 - 2024",
     projects: [
       {
+        image: "/maandag.jpg",
         title: {
           en: "Job Search Platform (core product)",
           pl: "Platforma do szukania pracy (core)",
@@ -697,6 +714,7 @@ export const workExperience: WorkExperience[] = [
     period: "2024 - present",
     projects: [
       {
+        image: "/holiday-calendar.jpg",
         title: { en: "Holiday Calendar", pl: "Holiday Calendar" },
         period: "2024-05 – present",
         description: {
@@ -745,6 +763,7 @@ export const workExperience: WorkExperience[] = [
         },
       },
       {
+        image: "/shipco.jpg",
         title: { en: "Ship&Co", pl: "Ship&Co" },
         period: "2024-07 – 2024-09",
         description: {
@@ -767,6 +786,7 @@ export const workExperience: WorkExperience[] = [
         },
       },
       {
+        image: "/zremb.jpg",
         title: { en: "ZREMB – ADA", pl: "ZREMB – ADA" },
         period: "project",
         description: {
@@ -791,6 +811,7 @@ export const workExperience: WorkExperience[] = [
         },
       },
       {
+        link: "https://vazco.ai/",
         title: {
           en: "Vazco Website (vazco.ai / vazco.eu)",
           pl: "Strona Vazco (vazco.ai / vazco.eu)",
@@ -817,6 +838,7 @@ export const workExperience: WorkExperience[] = [
         },
       },
       {
+        image: "/torus.jpg",
         title: { en: "Torus", pl: "Torus" },
         period: "2025-01 – 2025-02",
         description: {
@@ -839,6 +861,7 @@ export const workExperience: WorkExperience[] = [
         },
       },
       {
+        image: "/livom.jpg",
         title: { en: "Livom 3D Configurator", pl: "Livom – konfigurator 3D" },
         period: "2025-03 – 2025-05",
         description: {
@@ -881,6 +904,7 @@ export const workExperience: WorkExperience[] = [
           { name: "OpenAI", iconKey: "openai" },
           { name: "Git", iconKey: "git" },
         ],
+        image: "/las.jpg",
         link: "https://legalassetservicing.com",
         location: {
           city: "Miami",
@@ -890,6 +914,7 @@ export const workExperience: WorkExperience[] = [
         },
       },
       {
+        image: "/compas.jpg",
         title: { en: "CTO Compass", pl: "CTO Compass" },
         period: "project sprint",
         description: {
